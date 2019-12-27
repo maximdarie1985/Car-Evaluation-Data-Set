@@ -1,0 +1,25 @@
+Login Scenarios:
+GUI & Functionality:
+Minimum and Maximum lengths should be set for all the text boxes
+Password should be displayed in masked format rather than showing actual text format
+Login credentials in UPPER case should not be treated as invalid
+Validation message should be shown when special characters are entered in the username field, or when invalid username and/or password is entered or the fields are left blank
+Reset button should clear data from all the text boxes in the form
+Login credentials, especially password, should be stored in database in encrypted format
+Security:
+When logged in user copy URL and paste in new browser window, it should redirect to Login page
+Users should not be allowed to copy and paste Password from text box
+Notification email for multiple device login - if user login from unusual device/machine
+Entering Login credentials using virtual keyboard should be provided for banking application
+After 3 or 5 unsuccessful attempts of login, user login credentials should get locked for specific period e.g. 24 hours
+SSL certificate should be implemented/installed for Secured Website
+SQL injection attacks & XSS should be verified for login
+Two-way authentication through OTP on mobile/email should be tested for banking application
+Session:
+After logout if user clicks on back button user should not be able to login within same session, it should redirect to login page
+If user logged in on multiple devices and Logout from one device then it should Logout from all platform/devices
+Maximum Session out time should be set for Secured website
+Browser:
+If Browser cookies are cleared and user tries to login, the system should ask for credentials again
+‘Remember Form Data’ setting of the browser should not remember the password
+Validate the login functionality when browser cookies are turned OFF
